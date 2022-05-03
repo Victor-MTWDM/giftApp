@@ -22,7 +22,7 @@ export class GifsService {
       //Cortando a solo 10 elementos
       this._historial=this._historial.splice(0,10);
     }
-
+    //Validar esto en casa
     fetch('https://api.giphy.com/v1/gifs/search?api_key=CtbSNZMFPFlbWl1x5KQjtqPOHnE1ema5&q=dragon ball z&limit=10')
     .then(resp=>{
       resp.json().then(data=>{
